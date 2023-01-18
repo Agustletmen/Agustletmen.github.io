@@ -18,22 +18,29 @@
   <meta name="author" content="Agust">
   <meta name="keywords" content="">
   
-    <meta name="description" content="配置使用环境 安装npm 安装git 配置Github pages 一键部署hexo 1.安装 hexo-deployer-git 1npm install hexo-deployer-git --save 2.修改配置 12345deploy:  type: git  repo: &lt;repository url&gt; # github pages 仓库地址  branch">
+    <meta name="description" content="Windows下安装MySQL 1.下载MySQL 清华大学开源镜像站，博主这里选择的是windows版本的MySQL8.0。  下载完成后，将压缩包解压到你想要放置MySQL的位置 2.配置my.ini  在mysql文件夹新建my.ini文件（这是mysql的配置信息文件，免安装版一般不自带，需要自己建立） 复制下方配置数据粘贴到my.ini中 修改my.ini中的based">
 <meta property="og:type" content="article">
-<meta property="og:title" content="使用hexo+github搭建个人博客">
-<meta property="og:url" content="http://agustletmen.github.io/2023/01/11/%E4%BD%BF%E7%94%A8hexo-github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/index.html">
+<meta property="og:title" content="MySQL-配置">
+<meta property="og:url" content="http://agustletmen.github.io/2023/01/17/%E9%85%8D%E7%BD%AEMySQL%EF%BC%88%E5%85%8D%E5%AE%89%E8%A3%85%E7%89%88%E6%9C%AC%EF%BC%89/index.html">
 <meta property="og:site_name" content="Agust&#39;s blog">
-<meta property="og:description" content="配置使用环境 安装npm 安装git 配置Github pages 一键部署hexo 1.安装 hexo-deployer-git 1npm install hexo-deployer-git --save 2.修改配置 12345deploy:  type: git  repo: &lt;repository url&gt; # github pages 仓库地址  branch">
+<meta property="og:description" content="Windows下安装MySQL 1.下载MySQL 清华大学开源镜像站，博主这里选择的是windows版本的MySQL8.0。  下载完成后，将压缩包解压到你想要放置MySQL的位置 2.配置my.ini  在mysql文件夹新建my.ini文件（这是mysql的配置信息文件，免安装版一般不自带，需要自己建立） 复制下方配置数据粘贴到my.ini中 修改my.ini中的based">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-01-10T16:12:56.000Z">
-<meta property="article:modified_time" content="2023-01-18T14:23:10.746Z">
+<meta property="og:image" content="https://agust.oss-cn-guangzhou.aliyuncs.com/images/202301172155616.png">
+<meta property="og:image" content="https://agust.oss-cn-guangzhou.aliyuncs.com/images/202301172257008.png">
+<meta property="og:image" content="https://agust.oss-cn-guangzhou.aliyuncs.com/images/202301172250574.png">
+<meta property="og:image" content="https://agust.oss-cn-guangzhou.aliyuncs.com/images/202301172248020.png">
+<meta property="og:image" content="https://agust.oss-cn-guangzhou.aliyuncs.com/images/202301172251893.png">
+<meta property="og:image" content="https://agust.oss-cn-guangzhou.aliyuncs.com/images/202301172253181.png">
+<meta property="article:published_time" content="2023-01-17T13:43:17.000Z">
+<meta property="article:modified_time" content="2023-01-17T15:39:39.451Z">
 <meta property="article:author" content="Agust">
-<meta property="article:tag" content="工具">
+<meta property="article:tag" content="MySQL、数据库">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://agust.oss-cn-guangzhou.aliyuncs.com/images/202301172155616.png">
   
   
   
-  <title>使用hexo+github搭建个人博客 - Agust&#39;s blog</title>
+  <title>MySQL-配置 - Agust&#39;s blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -211,7 +218,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="使用hexo+github搭建个人博客"></span>
+            <span id="subtitle" data-typed-text="MySQL-配置"></span>
           
         </div>
 
@@ -222,8 +229,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-01-11 00:12" pubdate>
-          2023年1月11日 凌晨
+        <time datetime="2023-01-17 21:43" pubdate>
+          2023年1月17日 晚上
         </time>
       </span>
     
@@ -234,7 +241,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.1k 字
+          2k 字
         
       </span>
     
@@ -245,7 +252,7 @@
         
         
         
-          10 分钟
+          17 分钟
         
       </span>
     
@@ -275,6 +282,58 @@
   <div class="row nomargin-x">
     <div class="side-col d-none d-lg-block col-lg-2">
       
+  <aside class="sidebar category-bar" style="margin-right: -1rem">
+    
+
+
+
+
+
+<div class="category-list">
+  
+  
+    
+    
+    
+    <div class="category row nomargin-x">
+      <a class="category-item 
+          list-group-item category-item-action col-10 col-md-11 col-xm-11" title="数据库"
+        id="heading-68051bf4aa2743b030984b694628ee9c" role="tab" data-toggle="collapse" href="#collapse-68051bf4aa2743b030984b694628ee9c"
+        aria-expanded="true"
+      >
+        数据库
+        <span class="list-group-count">(1)</span>
+        <i class="iconfont icon-arrowright"></i>
+      </a>
+      
+      <div class="category-collapse collapse show" id="collapse-68051bf4aa2743b030984b694628ee9c"
+           role="tabpanel" aria-labelledby="heading-68051bf4aa2743b030984b694628ee9c">
+        
+        
+          
+  <div class="category-post-list">
+    
+    
+      
+      
+        <a href="/2023/01/17/%E9%85%8D%E7%BD%AEMySQL%EF%BC%88%E5%85%8D%E5%AE%89%E8%A3%85%E7%89%88%E6%9C%AC%EF%BC%89/" title="MySQL-配置"
+           class="list-group-item list-group-item-action
+           active">
+          <span class="category-post">MySQL-配置</span>
+        </a>
+      
+    
+  </div>
+
+        
+      </div>
+    </div>
+  
+</div>
+
+
+  </aside>
+
 
     </div>
 
@@ -283,12 +342,12 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">使用hexo+github搭建个人博客</h1>
+            <h1 style="display: none">MySQL-配置</h1>
             
               <p class="note note-info">
                 
                   
-                    本文最后更新于：2023年1月18日 晚上
+                    本文最后更新于：2023年1月17日 晚上
                   
                 
               </p>
@@ -296,31 +355,83 @@
             
               <div class="markdown-body">
                 
-                <h1 id="配置使用环境">配置使用环境</h1>
-<h2 id="安装npm">安装npm</h2>
-<h2 id="安装git">安装git</h2>
-<h2 id="配置github-pages">配置Github pages</h2>
-<h2 id="一键部署hexo">一键部署hexo</h2>
-<p>1.安装 hexo-deployer-git</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sh">npm install hexo-deployer-git --save<br></code></pre></td></tr></table></figure>
-<p>2.修改配置</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs sh">deploy:<br>  <span class="hljs-built_in">type</span>: git<br>  repo: &lt;repository url&gt; <span class="hljs-comment"># github pages 仓库地址</span><br>  branch: [branch] <span class="hljs-comment"># 分支名称 gh-pages (GitHub) 、coding-pages (Coding.net) 、master (others)</span><br>  message: [message] <span class="hljs-comment"># 自定义提交信息</span><br></code></pre></td></tr></table></figure>
-<p>3.执行
-<code>hexo clean &amp;&amp; hexo deploy</code>，生成站点文件并推送至远程库。</p>
-<p>4.登入 Github，在库设置（Repository
-Settings）中将默认分支设置为<code>_config.yml</code>配置中的分支名称。稍等片刻，您的站点就会显示在您的Github
-Pages中。</p>
-<h2 id="设置hexo支持latex公式">设置hexo支持Latex公式</h2>
-<p>网页上对<code>Latex</code>的支持需要借助能够解析<code>Latex</code>语法的插件引擎，将<code>Latex</code>语法转成<code>HTML</code>元素，常用的<code>Latex</code>公式引擎有<code>Katex</code>,<code>mathjax</code>引擎等，如CSDN使用的就是<code>Katex</code>，我们选择<code>mathjax</code>，这样渲染的公式更加好看。</p>
-<p>1.删除原有的渲染引擎</p>
-<figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs coffeescript"><span class="hljs-built_in">npm</span> uninstall hexo-renderer-marked<br></code></pre></td></tr></table></figure>
-<p>2.渲染引擎改成pandoc</p>
-<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs cmake">npm <span class="hljs-keyword">install</span> hexo-renderer-pandoc<br></code></pre></td></tr></table></figure>
-<p>3.安装mathjax插件</p>
-<figure class="highlight arcade"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs arcade">npm install hexo-<span class="hljs-built_in">filter</span>-mathjax<br></code></pre></td></tr></table></figure>
-<p>4.修改站点<code>_config.yaml</code>文件，注意不是<code>themes</code>中的<code>_config.yaml</code></p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">mathjax:</span><br>  <span class="hljs-attr">tags:</span> <span class="hljs-string">none</span> <span class="hljs-comment"># or &#x27;ams&#x27; or &#x27;all&#x27;</span><br>  <span class="hljs-attr">single_dollars:</span> <span class="hljs-literal">true</span> <span class="hljs-comment"># enable single dollar signs as in-line math delimiters</span><br>  <span class="hljs-attr">cjk_width:</span> <span class="hljs-number">0.9</span> <span class="hljs-comment"># relative CJK char width</span><br>  <span class="hljs-attr">normal_width:</span> <span class="hljs-number">0.6</span> <span class="hljs-comment"># relative normal (monospace) width</span><br>  <span class="hljs-attr">append_css:</span> <span class="hljs-literal">true</span> <span class="hljs-comment"># add CSS to pages rendered by MathJax</span><br>  <span class="hljs-attr">every_page:</span> <span class="hljs-literal">false</span> <span class="hljs-comment"># if true, every page will be rendered by MathJax regardless the `mathjax` setting in Front-matter</span><br></code></pre></td></tr></table></figure>
-<p>5.在需要使用latex的页面<code>.md</code>头部加入<code>mathjax: true</code></p>
+                <h1 id="windows下安装mysql">Windows下安装MySQL</h1>
+<h2 id="下载mysql">1.下载MySQL</h2>
+<p><a
+target="_blank" rel="noopener" href="https://mirrors.tuna.tsinghua.edu.cn/mysql/downloads/MySQL-8.0/">清华大学开源镜像站</a>，博主这里选择的是windows版本的MySQL8.0。</p>
+<p><img src="https://agust.oss-cn-guangzhou.aliyuncs.com/images/202301172155616.png" alt="image-20230117215518488" style="zoom:67%;" /></p>
+<p>下载完成后，将压缩包解压到你想要放置MySQL的位置</p>
+<h2 id="配置my.ini">2.配置my.ini</h2>
+<ol type="1">
+<li>在mysql文件夹新建<code>my.ini</code>文件（这是mysql的配置信息文件，免安装版一般不自带，需要自己建立）</li>
+<li>复制下方配置数据粘贴到<code>my.ini</code>中</li>
+<li>修改my.ini中的<code>basedir</code>和<code>datadir</code>为自己放置MySQL的位置</li>
+</ol>
+<p><strong>my.ini 配置文件内容：</strong></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><code class="hljs sql">[mysqld] # mysql daemon，是MySQL服务端程序<br><br># 设置<span class="hljs-number">3306</span>端口<br>port<span class="hljs-operator">=</span><span class="hljs-number">3306</span><br><br># 设置mysql的安装目录<br>basedir<span class="hljs-operator">=</span> Mysql文件夹路径   # 若单斜杠不起作用切记此处一定要用双斜杠\\<br><br># 设置mysql数据库的数据的存放目录<br>datadir<span class="hljs-operator">=</span> Mysql文件夹路径\data  # data文件夹不需要自己创建，配置完信息后执行命令会自动创建<br><br># 允许最大连接数<br>max_connections<span class="hljs-operator">=</span><span class="hljs-number">200</span><br><br># 允许连接失败的次数。这是为了防止有人从该主机试图攻击数据库系统<br>max_connect_errors<span class="hljs-operator">=</span><span class="hljs-number">10</span><br><br># 服务端使用的字符集默认为UTF8<br><span class="hljs-type">character</span><span class="hljs-operator">-</span><span class="hljs-keyword">set</span><span class="hljs-operator">-</span>server<span class="hljs-operator">=</span>utf8<br><br># 创建新表时将使用的默认存储引擎<br><span class="hljs-keyword">default</span><span class="hljs-operator">-</span>storage<span class="hljs-operator">-</span>engine<span class="hljs-operator">=</span>INNODB<br><br># 默认使用“mysql_native_password”插件认证<br>default_authentication_plugin<span class="hljs-operator">=</span>mysql_native_password<br><br><br>[mysql] # MySQL客户端配置<br><br># mysql客户端默认字符集<br><span class="hljs-keyword">default</span><span class="hljs-operator">-</span><span class="hljs-type">character</span><span class="hljs-operator">-</span><span class="hljs-keyword">set</span><span class="hljs-operator">=</span>utf8<br><br># 发生错误时不要发出蜂鸣声<br><span class="hljs-keyword">no</span><span class="hljs-operator">-</span>beep  <br><br>[client] #这个也是客户端设置<br># 设置mysql客户端连接服务端时默认使用的端口<br>port<span class="hljs-operator">=</span><span class="hljs-number">3306</span><br><span class="hljs-keyword">default</span><span class="hljs-operator">-</span><span class="hljs-type">character</span><span class="hljs-operator">-</span><span class="hljs-keyword">set</span><span class="hljs-operator">=</span>utf8<br></code></pre></td></tr></table></figure>
+<h2 id="初始化mysql">3.初始化MySQL</h2>
+<p>在MySQL安装目录的 bin 目录下执行命令:（要求管理员模式）</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sh">mysqld --initialize --console<br></code></pre></td></tr></table></figure>
+<p>执行完成后，会打印 root 用户的<strong>初始默认密码</strong>。</p>
+<blockquote>
+<p>若是密码没保存，可以把MySQL目录下的<code>datadir</code>文件夹删了，重新执行上面的指令。</p>
+</blockquote>
+<p><img src="https://agust.oss-cn-guangzhou.aliyuncs.com/images/202301172257008.png" alt="image-20230117225740924" style="zoom:80%;" /></p>
+<p>执行完毕后，MySQL数据库就已经初始化了，可以看到MySQL目录下原本没有的<code>data</code>文件夹也被自动创建了出来</p>
+<figure>
+<img
+src="https://agust.oss-cn-guangzhou.aliyuncs.com/images/202301172301182.png"
+alt="MySQL目录" />
+<figcaption aria-hidden="true">MySQL目录</figcaption>
+</figure>
+<h2 id="安装mysql服务">4.安装MySQL服务</h2>
+<p>执行下面的指令，在Windows上安装MySQL服务</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sql">mysqld <span class="hljs-comment">--install </span><br></code></pre></td></tr></table></figure>
+<blockquote>
+<p>可以在上述指令后面加上自定义的服务名，比如<code>mysqld --install hello</code>如果是这样的话，后续指令中的"mysql"都要改为自定义的服务名（即
+hello）；当然，如果不加的话，其默认取名为 mysql。</p>
+</blockquote>
+<p>安装完成之后，就可以通过命令行（管理员模式）控制MySQL：</p>
+<p>启动MySQL的服务</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sh">net start mysql<br></code></pre></td></tr></table></figure>
+<p>关闭MySQL的服务</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sh">net stop mysql<br></code></pre></td></tr></table></figure>
+<p>卸载 MySQL 服务</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sql">sc <span class="hljs-keyword">delete</span> mysql<br></code></pre></td></tr></table></figure>
+<blockquote>
+<p>这里补充下：</p>
+<p><code>net</code>命令用于管理网络环境、服务、用户、登陆等本地信息；</p>
+<p><code>SC</code>命令用于与 服务控制管理器 和 服务 进行通信。（SC 是
+Server command 的意思）</p>
+</blockquote>
+<h2 id="配置环境变量">5.配置环境变量</h2>
+<p>为MySQL配置系统环境变量，这样才能在任意位置使用mysql的命令。具体操作步骤如下：</p>
+<p>1.<code>win</code>+<code>Q</code>调出搜索面板，搜索<strong>环境变量</strong></p>
+<p><img src="https://agust.oss-cn-guangzhou.aliyuncs.com/images/202301172250574.png" alt="搜索面板" style="zoom:80%;" /></p>
+<p>2.打开系统属性面板，点击"环境变量"</p>
+<p><img src="https://agust.oss-cn-guangzhou.aliyuncs.com/images/202301172248020.png" alt="系统属性面板" style="zoom: 80%;" /></p>
+<p>3.进入到环境变量后，在系统变量中找到
+<strong>"path"</strong>，双击进入编辑界面</p>
+<p><img src="https://agust.oss-cn-guangzhou.aliyuncs.com/images/202301172251893.png" alt="环境变量" style="zoom:80%;" /></p>
+<p>4.点击"新建"，然后输入
+"mysql文件夹"（根据自己前面放置的位置自行调整）</p>
+<p><img src="https://agust.oss-cn-guangzhou.aliyuncs.com/images/202301172253181.png" alt="添加MySQL变量" style="zoom:80%;" /></p>
+<p>5.这样我们就算配置完成了，接下来打开<strong>命令行</strong>，输入以下指令测试下是否成功。</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sh">mysql --version <br></code></pre></td></tr></table></figure>
+<p>出现类似这样的界面，就算是成功了</p>
+<figure>
+<img
+src="https://agust.oss-cn-guangzhou.aliyuncs.com/images/202301172328079.png"
+alt="mysql –version" />
+<figcaption aria-hidden="true">mysql –version</figcaption>
+</figure>
+<h2 id="登录mysql并更改密码">6.登录MySQL并更改密码</h2>
+<p>安装如下格式输入指令，然后输入密码登录MySQL，<strong>用户密码就是初始化数据库时所显示的初始密码</strong>。</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sh">mysql -u root -p <br></code></pre></td></tr></table></figure>
+<p>补充：这是完整的命令，如是MySQL在远程服务器上之类的，可以按照这个指令输入</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs sh">mysql [-h 主机地址 -P 端口] -u 用户名 -p 用户密码 <span class="hljs-comment">#如果是本机可省略[]内容</span><br><span class="hljs-comment"># mysql -h localhost -P 3306 -u root -p</span><br></code></pre></td></tr></table></figure>
+<p>由于密码是系统初始化的，为了方便，这里还是建议修改下密码，如下指令是将<code>root</code>用户的密码改为"123"。</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">ALTER</span> <span class="hljs-keyword">USER</span> <span class="hljs-string">&#x27;root&#x27;</span>@<span class="hljs-string">&#x27;localhost&#x27;</span> IDENTIFIED <span class="hljs-keyword">WITH</span> mysql_native_password <span class="hljs-keyword">BY</span> <span class="hljs-string">&#x27;123&#x27;</span>;<br></code></pre></td></tr></table></figure>
 
                 
               </div>
@@ -339,7 +450,7 @@ Pages中。</p>
     
       <span class="category-chain">
         
-  <a href="/categories/%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/" class="category-chain-item">配置教程</a>
+  <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" class="category-chain-item">数据库</a>
   
   
 
@@ -354,7 +465,7 @@ Pages中。</p>
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/%E5%B7%A5%E5%85%B7/">#工具</a>
+        <a href="/tags/MySQL%E3%80%81%E6%95%B0%E6%8D%AE%E5%BA%93/">#MySQL、数据库</a>
       
     </div>
   
@@ -366,8 +477,8 @@ Pages中。</p>
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>使用hexo+github搭建个人博客</div>
-      <div>http://agustletmen.github.io/2023/01/11/使用hexo-github搭建个人博客/</div>
+      <div>MySQL-配置</div>
+      <div>http://agustletmen.github.io/2023/01/17/配置MySQL（免安装版本）/</div>
     </div>
     <div class="license-meta">
       
@@ -379,7 +490,7 @@ Pages中。</p>
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年1月11日</div>
+          <div>2023年1月17日</div>
         </div>
       
       
@@ -411,9 +522,9 @@ Pages中。</p>
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/01/16/JDBC/" title="JDBC">
+                      <a href="/2023/01/18/Github%EF%BC%88%E4%B8%80%EF%BC%89/" title="Github（一）">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">JDBC</span>
+                        <span class="hidden-mobile">Github（一）</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -421,8 +532,8 @@ Pages中。</p>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/01/03/Latex/" title="一文入门Latex">
-                        <span class="hidden-mobile">一文入门Latex</span>
+                      <a href="/2023/01/17/hello-world/" title="Hello World">
+                        <span class="hidden-mobile">Hello World</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
