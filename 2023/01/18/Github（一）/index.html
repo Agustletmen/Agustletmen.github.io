@@ -18,16 +18,16 @@
   <meta name="author" content="Agust">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Git 用于管理代码提交，是开发必不可少的环节，可以有效保证功能正向迭代，解决多人开发配合问题。 入门 配置用户信息 Git是分布式版本控制系统，所以每台机器都必须提供 用户名称 和 Email 来分辨编辑者。如下这两条配置很重要，每次Git提交时都会引用这两条信息，说明是谁提交了更新，会随更新内容一起被永久纳入历史记录。 为当前仓库配置用户信息 12git config --gl">
+    <meta name="description" content="Git入门 Git 用于管理代码提交，是开发必不可少的环节，可以有效保证功能正向迭代，解决多人开发配合问题。 配置用户信息 Git是分布式版本控制系统，所以每台机器都必须提供 用户名称 和 Email 来分辨编辑者。如下这两条配置很重要，每次Git提交时都会引用这两条信息，说明是谁提交了更新，会随更新内容一起被永久纳入历史记录。 为当前仓库配置用户信息 12git config -">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Github（一）">
 <meta property="og:url" content="http://agustletmen.github.io/2023/01/18/Github%EF%BC%88%E4%B8%80%EF%BC%89/index.html">
 <meta property="og:site_name" content="Agust&#39;s blog">
-<meta property="og:description" content="Git 用于管理代码提交，是开发必不可少的环节，可以有效保证功能正向迭代，解决多人开发配合问题。 入门 配置用户信息 Git是分布式版本控制系统，所以每台机器都必须提供 用户名称 和 Email 来分辨编辑者。如下这两条配置很重要，每次Git提交时都会引用这两条信息，说明是谁提交了更新，会随更新内容一起被永久纳入历史记录。 为当前仓库配置用户信息 12git config --gl">
+<meta property="og:description" content="Git入门 Git 用于管理代码提交，是开发必不可少的环节，可以有效保证功能正向迭代，解决多人开发配合问题。 配置用户信息 Git是分布式版本控制系统，所以每台机器都必须提供 用户名称 和 Email 来分辨编辑者。如下这两条配置很重要，每次Git提交时都会引用这两条信息，说明是谁提交了更新，会随更新内容一起被永久纳入历史记录。 为当前仓库配置用户信息 12git config -">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://agust.oss-cn-guangzhou.aliyuncs.com/images/202301182137864.png">
 <meta property="article:published_time" content="2023-01-18T08:10:53.000Z">
-<meta property="article:modified_time" content="2023-01-18T14:24:18.440Z">
+<meta property="article:modified_time" content="2023-01-18T14:40:08.118Z">
 <meta property="article:author" content="Agust">
 <meta property="article:tag" content="Git">
 <meta name="twitter:card" content="summary_large_image">
@@ -350,10 +350,10 @@
             
               <div class="markdown-body">
                 
-                <p>Git
+                <h1 id="git入门">Git入门</h1>
+<p>Git
 用于管理代码提交，是开发必不可少的环节，可以有效保证功能正向迭代，解决多人开发配合问题。</p>
-<h2 id="入门">入门</h2>
-<h3 id="配置用户信息">配置用户信息</h3>
+<h2 id="配置用户信息">配置用户信息</h2>
 <p>Git是分布式版本控制系统，所以每台机器都必须提供
 <strong>用户名称</strong> 和 <strong>Email</strong>
 来分辨编辑者。如下这两条配置很重要，每次Git提交时都会引用这两条信息，说明是谁提交了更新，会随更新内容一起被永久纳入历史记录。</p>
@@ -368,46 +368,38 @@
 <p>配置信息存储于项目文件夹的 <code>.gitconfig</code>
 中，如果是全局配置的话，那么就存储于 <code>~/.gitconfig</code> 中。</p>
 </blockquote>
-<h3 id="创建版本库">创建版本库</h3>
+<h2 id="创建版本库">创建版本库</h2>
 <p>我们使用 Git
-进行版本管理，我们称被管理的目录为<strong>工作区</strong>（工作树）。要对工作区的文件进行管理，必须在工作区中创建<strong>版本库</strong>（一个名为<code>.git</code>的文件夹，里面记录着工作区变动的信息）。</p>
-<p>创建版本仓库，方法有二：</p>
-<p>一、自己动手初始化，执行了这个命令的目录下就会生成 <code>.git</code>
-目录。</p>
-<p>在当前目录初始化一个Git版本库</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sh">git init<br></code></pre></td></tr></table></figure>
-<ul>
-<li>新建一个目录，将其初始化为Git版本库
-<code>git init &lt;目录名称&gt;</code></li>
-</ul>
-<p>二、如果不是从本地文件中新建git仓库，而是从远程拉取仓库，那么直接对远程仓库进行克隆即可。</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sh">git <span class="hljs-built_in">clone</span> &lt;远程仓库url&gt;<br></code></pre></td></tr></table></figure>
-<ul>
-<li>克隆指定tag的仓库
-<code>git clone --barnch &lt;tag&gt; &lt;url&gt;</code></li>
-</ul>
-<h3 id="git的工作结构">Git的工作结构</h3>
+进行版本管理，我们称被管理的目录为<strong>工作区</strong>。要对工作区的文件进行管理，必须在工作区中创建<strong>版本库</strong>。创建版本仓库，方法有二：</p>
+<p><strong>1.本地初始化</strong></p>
+<p>在当前目录初始化一个Git版本库，执行了这个命令的目录下就会生成<code>.git</code>目录，这个<code>.git</code>就是版本库</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs sh"><span class="hljs-comment"># 在当前目录下初始化版本库</span><br>git init<br><br><span class="hljs-comment"># 新建一个目录，将其初始化为Git版本库</span><br>git init &lt;目录名称&gt;<br></code></pre></td></tr></table></figure>
+<p><strong>2.克隆远程仓库</strong></p>
+<p>如果不是从本地文件中新建git仓库，而是从远程拉取仓库，那么直接对远程仓库进行克隆即可。</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs sh">git <span class="hljs-built_in">clone</span> &lt;远程仓库url&gt;<br><br><span class="hljs-comment"># 克隆指定tag的仓库</span><br>git <span class="hljs-built_in">clone</span> --branch &lt;tag&gt; &lt;url&gt;<br></code></pre></td></tr></table></figure>
+<h2 id="git的工作结构">Git的工作结构</h2>
 <p>Git中的文件分为两种状态：</p>
 <ol type="1">
-<li>Untracked：不属于git管理的</li>
-<li>Tracked：被git管理的</li>
+<li><strong>Untracked</strong>：不属于git管理的</li>
+<li><strong>Tracked</strong>：被git管理的</li>
 </ol>
-<p>我们可以使用<code>git add &lt;文件名&gt;</code>让文件进入跟踪状态。</p>
-<p>Git跟踪并管理的是修改，而非文件。这些修改有以下几种状态</p>
+<p>我们可以使用<code>git add &lt;file&gt;</code>让文件进入跟踪状态。</p>
+<p>Git跟踪并管理的是<strong>修改</strong>，而非文件。这些修改有以下几种状态</p>
 <ol type="1">
-<li>已修改：表示某个文件修改了，但还没有提交给git；</li>
-<li>已暂存：表示把文件的修改放在一个提交清单中了，但还没有保存到版本库</li>
-<li>已提交：表示该修改已经被保存在版本库中了。</li>
+<li>已修改：某个文件修改了，但还没有告诉Git；</li>
+<li>已暂存：文件的修改被放在一个提交清单中，但还没有保存到版本库</li>
+<li>已提交：修改已经被保存在版本库中了。</li>
 </ol>
-<p>因此 Git 在管理项目时，文件流转的三个工作区域是：</p>
+<p>因此 Git 在管理项目时，修改流转的三个工作区域是：</p>
 <ol type="1">
 <li>工作区（WorkSpace），就是被管理的项目目录。</li>
-<li>暂存区（index)，即<code>.git/index</code>，用于临时保存改动</li>
+<li>暂存区（index or
+stage)，即<code>.git/index</code>，用于临时保存改动。</li>
 <li>版本库（Repository），即<code>.git</code> 目录，它是 Git
 用来保存元数据和对象数据库的地方。</li>
 </ol>
 <p><img src="https://agust.oss-cn-guangzhou.aliyuncs.com/images/202301182137864.png" alt="image-20230118213727787" style="zoom:80%;" /></p>
-<h3 id="提交文件的修改">提交文件的修改</h3>
+<h2 id="提交文件的修改">提交文件的修改</h2>
 <p><strong>Git基本工作流</strong></p>
 <figure>
 <img
@@ -541,7 +533,7 @@ git reflog 来查看版本id）</p>
 <p>例如，你可以使用 <code>git show HEAD</code>
 命令来显示当前分支的最新提交信息，或者使用
 <code>git show &lt;commit&gt;</code> 命令来显示指定提交的信息。</p>
-<h2 id="文件操作">文件操作</h2>
+<h2 id="操作文件">操作文件</h2>
 <h3 id="git-rm删除文件">git rm：删除文件</h3>
 <p>在Git中，删除也是一个修改操作。一般情况下，你通常直接在文件管理器中把没用的文件删了，此时Git知道你删除了文件，但工作区和版本库不一致了，所有我们需要用命令<code>git rm &lt;file&gt;</code>从版本库中删除该文件。</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs shell"><span class="hljs-meta prompt_"># </span><span class="language-bash">将文件从暂存区和工作区中删除，一个git <span class="hljs-built_in">rm</span>相当于————执行了<span class="hljs-built_in">rm</span> 后又进行了git add</span><br>git rm &lt;file&gt;<br><span class="hljs-meta prompt_"></span><br><span class="hljs-meta prompt_"># </span><span class="language-bash">若要反悔自己的`git add`操作，可以将文件从暂存区中删除</span><br>git rm --cached &lt;file&gt;<br></code></pre></td></tr></table></figure>
