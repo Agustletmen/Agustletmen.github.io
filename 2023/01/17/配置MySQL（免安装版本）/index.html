@@ -7,8 +7,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
-  <link rel="icon" href="/img/fluid.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/avatar.png">
+  <link rel="icon" href="/img/avatar.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
@@ -25,18 +25,13 @@
 <meta property="og:site_name" content="Agust&#39;s blog">
 <meta property="og:description" content="Windows下安装MySQL 1.下载MySQL 清华大学开源镜像站，博主这里选择的是windows版本的MySQL8.0。  下载完成后，将压缩包解压到你想要放置MySQL的位置 2.配置my.ini  在mysql文件夹新建my.ini文件（这是mysql的配置信息文件，免安装版一般不自带，需要自己建立） 复制下方配置数据粘贴到my.ini中 修改my.ini中的based">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://agust.oss-cn-guangzhou.aliyuncs.com/images/202301172155616.png">
-<meta property="og:image" content="https://agust.oss-cn-guangzhou.aliyuncs.com/images/202301172257008.png">
-<meta property="og:image" content="https://agust.oss-cn-guangzhou.aliyuncs.com/images/202301172250574.png">
-<meta property="og:image" content="https://agust.oss-cn-guangzhou.aliyuncs.com/images/202301172248020.png">
-<meta property="og:image" content="https://agust.oss-cn-guangzhou.aliyuncs.com/images/202301172251893.png">
-<meta property="og:image" content="https://agust.oss-cn-guangzhou.aliyuncs.com/images/202301172253181.png">
+<meta property="og:image" content="http://agustletmen.github.io/img/about.png">
 <meta property="article:published_time" content="2023-01-17T13:43:17.000Z">
-<meta property="article:modified_time" content="2023-01-17T15:39:39.451Z">
+<meta property="article:modified_time" content="2023-01-19T16:10:28.120Z">
 <meta property="article:author" content="Agust">
-<meta property="article:tag" content="MySQL、数据库">
+<meta property="article:tag" content="MySQL">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://agust.oss-cn-guangzhou.aliyuncs.com/images/202301172155616.png">
+<meta name="twitter:image" content="http://agustletmen.github.io/img/about.png">
   
   
   
@@ -78,7 +73,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"agustletmen.github.io","root":"/","version":"1.9.4","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":false},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":6},"lazyload":{"enable":false,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":"ba794872cd982708634bf92d95304876","google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+    var CONFIG = {"hostname":"agustletmen.github.io","root":"/","version":"1.9.4","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":false,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":false},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":6},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":"ba794872cd982708634bf92d95304876","google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -212,7 +207,7 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+     style="background: url('/img/about.png') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
@@ -347,7 +342,7 @@
               <p class="note note-info">
                 
                   
-                    本文最后更新于：2023年1月17日 晚上
+                    本文最后更新于：2023年1月20日 凌晨
                   
                 
               </p>
@@ -359,7 +354,7 @@
 <h2 id="下载mysql">1.下载MySQL</h2>
 <p><a
 target="_blank" rel="noopener" href="https://mirrors.tuna.tsinghua.edu.cn/mysql/downloads/MySQL-8.0/">清华大学开源镜像站</a>，博主这里选择的是windows版本的MySQL8.0。</p>
-<p><img src="https://agust.oss-cn-guangzhou.aliyuncs.com/images/202301172155616.png" alt="image-20230117215518488" style="zoom:67%;" /></p>
+<p><img src="https://agust.oss-cn-guangzhou.aliyuncs.com/images/202301172155616.png" srcset="/img/loading.gif" lazyload alt="image-20230117215518488" style="zoom:67%;" /></p>
 <p>下载完成后，将压缩包解压到你想要放置MySQL的位置</p>
 <h2 id="配置my.ini">2.配置my.ini</h2>
 <ol type="1">
@@ -376,11 +371,11 @@ target="_blank" rel="noopener" href="https://mirrors.tuna.tsinghua.edu.cn/mysql/
 <blockquote>
 <p>若是密码没保存，可以把MySQL目录下的<code>datadir</code>文件夹删了，重新执行上面的指令。</p>
 </blockquote>
-<p><img src="https://agust.oss-cn-guangzhou.aliyuncs.com/images/202301172257008.png" alt="image-20230117225740924" style="zoom:80%;" /></p>
+<p><img src="https://agust.oss-cn-guangzhou.aliyuncs.com/images/202301172257008.png" srcset="/img/loading.gif" lazyload alt="image-20230117225740924" style="zoom:80%;" /></p>
 <p>执行完毕后，MySQL数据库就已经初始化了，可以看到MySQL目录下原本没有的<code>data</code>文件夹也被自动创建了出来</p>
 <figure>
 <img
-src="https://agust.oss-cn-guangzhou.aliyuncs.com/images/202301172301182.png"
+src="https://agust.oss-cn-guangzhou.aliyuncs.com/images/202301172301182.png" srcset="/img/loading.gif" lazyload
 alt="MySQL目录" />
 <figcaption aria-hidden="true">MySQL目录</figcaption>
 </figure>
@@ -407,21 +402,21 @@ Server command 的意思）</p>
 <h2 id="配置环境变量">5.配置环境变量</h2>
 <p>为MySQL配置系统环境变量，这样才能在任意位置使用mysql的命令。具体操作步骤如下：</p>
 <p>1.<code>win</code>+<code>Q</code>调出搜索面板，搜索<strong>环境变量</strong></p>
-<p><img src="https://agust.oss-cn-guangzhou.aliyuncs.com/images/202301172250574.png" alt="搜索面板" style="zoom:80%;" /></p>
+<p><img src="https://agust.oss-cn-guangzhou.aliyuncs.com/images/202301172250574.png" srcset="/img/loading.gif" lazyload alt="搜索面板" style="zoom:80%;" /></p>
 <p>2.打开系统属性面板，点击"环境变量"</p>
-<p><img src="https://agust.oss-cn-guangzhou.aliyuncs.com/images/202301172248020.png" alt="系统属性面板" style="zoom: 80%;" /></p>
+<p><img src="https://agust.oss-cn-guangzhou.aliyuncs.com/images/202301172248020.png" srcset="/img/loading.gif" lazyload alt="系统属性面板" style="zoom: 80%;" /></p>
 <p>3.进入到环境变量后，在系统变量中找到
 <strong>"path"</strong>，双击进入编辑界面</p>
-<p><img src="https://agust.oss-cn-guangzhou.aliyuncs.com/images/202301172251893.png" alt="环境变量" style="zoom:80%;" /></p>
+<p><img src="https://agust.oss-cn-guangzhou.aliyuncs.com/images/202301172251893.png" srcset="/img/loading.gif" lazyload alt="环境变量" style="zoom:80%;" /></p>
 <p>4.点击"新建"，然后输入
 "mysql文件夹"（根据自己前面放置的位置自行调整）</p>
-<p><img src="https://agust.oss-cn-guangzhou.aliyuncs.com/images/202301172253181.png" alt="添加MySQL变量" style="zoom:80%;" /></p>
+<p><img src="https://agust.oss-cn-guangzhou.aliyuncs.com/images/202301172253181.png" srcset="/img/loading.gif" lazyload alt="添加MySQL变量" style="zoom:80%;" /></p>
 <p>5.这样我们就算配置完成了，接下来打开<strong>命令行</strong>，输入以下指令测试下是否成功。</p>
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sh">mysql --version <br></code></pre></td></tr></table></figure>
 <p>出现类似这样的界面，就算是成功了</p>
 <figure>
 <img
-src="https://agust.oss-cn-guangzhou.aliyuncs.com/images/202301172328079.png"
+src="https://agust.oss-cn-guangzhou.aliyuncs.com/images/202301172328079.png" srcset="/img/loading.gif" lazyload
 alt="mysql –version" />
 <figcaption aria-hidden="true">mysql –version</figcaption>
 </figure>
@@ -465,7 +460,7 @@ alt="mysql –version" />
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/MySQL%E3%80%81%E6%95%B0%E6%8D%AE%E5%BA%93/">#MySQL、数据库</a>
+        <a href="/tags/MySQL/">#MySQL</a>
       
     </div>
   
@@ -496,7 +491,7 @@ alt="mysql –version" />
       
         <div class="license-meta-item license-meta-date">
           <div>更新于</div>
-          <div>2023年1月17日</div>
+          <div>2023年1月20日</div>
         </div>
       
       
@@ -537,8 +532,8 @@ alt="mysql –version" />
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/01/17/hello-world/" title="Hello World">
-                        <span class="hidden-mobile">Hello World</span>
+                      <a href="/2023/01/16/JDBC/" title="JDBC">
+                        <span class="hidden-mobile">JDBC</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -686,6 +681,10 @@ alt="mysql –version" />
 
 
 
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
 
 
 

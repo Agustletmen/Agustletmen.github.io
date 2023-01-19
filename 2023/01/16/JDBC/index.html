@@ -7,8 +7,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
-  <link rel="icon" href="/img/fluid.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/avatar.png">
+  <link rel="icon" href="/img/avatar.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
@@ -25,17 +25,13 @@
 <meta property="og:site_name" content="Agust&#39;s blog">
 <meta property="og:description" content="JDBC 什么是JDBC？ JDBC就是使用Java语言操作关系型数据库的一套API，全称（Java DataBase Connectivity）Java数据库连接。   官方(sun公司)定义的一套操作所有关系型数据库的规则，即接口。 各个数据库厂商去实现这套接口，提供数据库驱动jar包。 我们可以使用这套接口(JDBC) 编程，真正执行的代码是驱动jar包中的实现类。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://agust.oss-cn-guangzhou.aliyuncs.com/images/202301161044561.png">
-<meta property="og:image" content="https://agust.oss-cn-guangzhou.aliyuncs.com/images/202301161043073.png">
-<meta property="og:image" content="https://agust.oss-cn-guangzhou.aliyuncs.com/images/202301161044387.png">
-<meta property="og:image" content="https://agust.oss-cn-guangzhou.aliyuncs.com/images/202301161044687.png">
-<meta property="og:image" content="https://agust.oss-cn-guangzhou.aliyuncs.com/images/202301161044173.png">
+<meta property="og:image" content="http://agustletmen.github.io/img/about.png">
 <meta property="article:published_time" content="2023-01-16T02:45:16.000Z">
-<meta property="article:modified_time" content="2023-01-17T02:12:14.847Z">
+<meta property="article:modified_time" content="2023-01-19T16:10:10.428Z">
 <meta property="article:author" content="Agust">
 <meta property="article:tag" content="数据库">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://agust.oss-cn-guangzhou.aliyuncs.com/images/202301161044561.png">
+<meta name="twitter:image" content="http://agustletmen.github.io/img/about.png">
   
   
   
@@ -77,7 +73,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"agustletmen.github.io","root":"/","version":"1.9.4","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":false},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":6},"lazyload":{"enable":false,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":"ba794872cd982708634bf92d95304876","google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+    var CONFIG = {"hostname":"agustletmen.github.io","root":"/","version":"1.9.4","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":false,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":false},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":6},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":"ba794872cd982708634bf92d95304876","google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -211,7 +207,7 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+     style="background: url('/img/about.png') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
@@ -281,6 +277,67 @@
   <div class="row nomargin-x">
     <div class="side-col d-none d-lg-block col-lg-2">
       
+  <aside class="sidebar category-bar" style="margin-right: -1rem">
+    
+
+
+
+
+
+<div class="category-list">
+  
+  
+    
+    
+    
+    <div class="category row nomargin-x">
+      <a class="category-item 
+          list-group-item category-item-action col-10 col-md-11 col-xm-11" title="JavaSE"
+        id="heading-543b8bc8a493dcef4ec497e6abf4163b" role="tab" data-toggle="collapse" href="#collapse-543b8bc8a493dcef4ec497e6abf4163b"
+        aria-expanded="true"
+      >
+        JavaSE
+        <span class="list-group-count">(2)</span>
+        <i class="iconfont icon-arrowright"></i>
+      </a>
+      
+      <div class="category-collapse collapse show" id="collapse-543b8bc8a493dcef4ec497e6abf4163b"
+           role="tabpanel" aria-labelledby="heading-543b8bc8a493dcef4ec497e6abf4163b">
+        
+        
+          
+  <div class="category-post-list">
+    
+    
+      
+      
+        <a href="/2023/01/16/JDBC/" title="JDBC"
+           class="list-group-item list-group-item-action
+           active">
+          <span class="category-post">JDBC</span>
+        </a>
+      
+    
+      
+      
+        <a href="/2023/01/19/%E6%B3%A8%E8%A7%A3/" title="注解"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">注解</span>
+        </a>
+      
+    
+  </div>
+
+        
+      </div>
+    </div>
+  
+</div>
+
+
+  </aside>
+
 
     </div>
 
@@ -294,7 +351,7 @@
               <p class="note note-info">
                 
                   
-                    本文最后更新于：2023年1月17日 上午
+                    本文最后更新于：2023年1月20日 凌晨
                   
                 
               </p>
@@ -306,7 +363,7 @@
 <h2 id="什么是jdbc">什么是JDBC？</h2>
 <p>JDBC就是使用Java语言操作关系型数据库的一套API，全称（Java DataBase
 Connectivity）Java数据库连接。</p>
-<p><img src="https://agust.oss-cn-guangzhou.aliyuncs.com/images/202301161044561.png" style="zoom: 67%;" /></p>
+<p><img src="https://agust.oss-cn-guangzhou.aliyuncs.com/images/202301161044561.png" srcset="/img/loading.gif" lazyload style="zoom: 67%;" /></p>
 <ul>
 <li>官方(sun公司)定义的一套操作所有关系型数据库的规则，即接口。</li>
 <li>各个数据库厂商去实现这套接口，提供数据库驱动jar包。</li>
@@ -327,7 +384,7 @@ Connectivity）Java数据库连接。</p>
 <p>告诉程序该使用哪一个数据库驱动jar</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs java">Class.forName(<span class="hljs-string">&quot;com.mysql.jdbc.Driver&quot;</span>);<br></code></pre></td></tr></table></figure>
 <p>MySQL5之后的驱动包可以省略注册驱动的步骤，其会自动加载jar包中的<code>META-INF/services/java.sql.Driver</code>文件中的驱动类。</p>
-<p><img src="https://agust.oss-cn-guangzhou.aliyuncs.com/images/202301161043073.png" alt="在这里插入图片描述" style="zoom: 80%;" /></p>
+<p><img src="https://agust.oss-cn-guangzhou.aliyuncs.com/images/202301161043073.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述" style="zoom: 80%;" /></p>
 <h4 id="获取数据库连接">2.获取数据库连接</h4>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">static</span> Connection <span class="hljs-title function_">getConnection</span><span class="hljs-params">(String url, String user, String password)</span><br></code></pre></td></tr></table></figure>
 <ul>
@@ -422,7 +479,7 @@ Connectivity）Java数据库连接。</p>
 target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1ZR4y1Y745/?share_source=copy_web&amp;vd_source=8f705244da72f117f83959cff33acfc1">SQL注入攻击原理，方法和类型</a></p>
 <p>SQL注入是对用户输入数据的合法性没有判断或过滤不严，通过操作输入来修改事先定义好的SQL语句，用以达到执行代码对服务器进行攻击的方法。</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-meta">@Test</span><br><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">testLoginInject</span><span class="hljs-params">()</span> <span class="hljs-keyword">throws</span> Exception &#123;<br>    <span class="hljs-comment">//获取连接</span><br>    <span class="hljs-type">String</span> <span class="hljs-variable">url</span> <span class="hljs-operator">=</span> <span class="hljs-string">&quot;jdbc:mysql:///db1?serverTimezone=UTC&quot;</span>;<span class="hljs-comment">//jdbc:mysql://+ IP + Port /数据库名</span><br>    <span class="hljs-type">String</span> <span class="hljs-variable">username</span> <span class="hljs-operator">=</span> <span class="hljs-string">&quot;root&quot;</span>;<br>    <span class="hljs-type">String</span> <span class="hljs-variable">password</span> <span class="hljs-operator">=</span> <span class="hljs-string">&quot;123&quot;</span>;<br>    <span class="hljs-type">Connection</span> <span class="hljs-variable">conn</span> <span class="hljs-operator">=</span> DriverManager.getConnection(url, username, password);<br><br>    <span class="hljs-type">String</span> <span class="hljs-variable">name</span> <span class="hljs-operator">=</span> <span class="hljs-string">&quot;dadsadadad&quot;</span>;<br>    <span class="hljs-type">String</span> <span class="hljs-variable">pwd</span> <span class="hljs-operator">=</span> <span class="hljs-string">&quot;&#x27; or &#x27;1&#x27; = &#x27;1&quot;</span>;<br>    <span class="hljs-type">String</span> <span class="hljs-variable">sql</span> <span class="hljs-operator">=</span> <span class="hljs-string">&quot;select * from tb_user where username=&#x27;&quot;</span> + name + <span class="hljs-string">&quot;&#x27;and password =&#x27;&quot;</span> + pwd + <span class="hljs-string">&quot;&#x27;&quot;</span>;<br>    System.out.println(sql);<br>    <span class="hljs-type">Statement</span> <span class="hljs-variable">stmt</span> <span class="hljs-operator">=</span> conn.createStatement();<br>    <span class="hljs-type">ResultSet</span> <span class="hljs-variable">rs</span> <span class="hljs-operator">=</span> stmt.executeQuery(sql);<br><br>    <span class="hljs-keyword">if</span> (rs.next()) &#123;<br>        System.out.println(<span class="hljs-string">&quot;login success&quot;</span>);<br>    &#125; <span class="hljs-keyword">else</span> &#123;<br>        System.out.println(<span class="hljs-string">&quot;login fail&quot;</span>);<br>    &#125;<br>    <span class="hljs-comment">//释放资源</span><br>    stmt.close();<br>    conn.close();<br>&#125;<br></code></pre></td></tr></table></figure>
-<p><img src="https://agust.oss-cn-guangzhou.aliyuncs.com/images/202301161044387.png" alt="在这里插入图片描述" style="zoom:67%;" /></p>
+<p><img src="https://agust.oss-cn-guangzhou.aliyuncs.com/images/202301161044387.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述" style="zoom:67%;" /></p>
 <p><strong>数据库语句</strong></p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">TABLE</span> `tb_user` (<br>  `username` <span class="hljs-type">varchar</span>(<span class="hljs-number">20</span>) <span class="hljs-keyword">DEFAULT</span> <span class="hljs-keyword">NULL</span>,<br>  `password` <span class="hljs-type">varchar</span>(<span class="hljs-number">20</span>) <span class="hljs-keyword">DEFAULT</span> <span class="hljs-keyword">NULL</span><br>) ENGINE<span class="hljs-operator">=</span>InnoDB <span class="hljs-keyword">DEFAULT</span> CHARSET<span class="hljs-operator">=</span>utf8;<br></code></pre></td></tr></table></figure>
 <h4 id="防止sql注入">2.防止SQL注入</h4>
@@ -443,7 +500,7 @@ target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1ZR4y1Y745
 <p>在设置<code>?</code>的值时会对其转义，原本的单引号<code>'</code>会被转义为<code>\'</code>，即原本的SQL注入就变成了<code>'\' or \'1\' =\'1\'</code>，无法起到原先的作用。</p>
 <h4 id="预编译sql">3.预编译SQL</h4>
 <p>PreparedStatement能预编译SQL，提高性能。</p>
-<p><img src="https://agust.oss-cn-guangzhou.aliyuncs.com/images/202301161044687.png" alt="在这里插入图片描述" style="zoom:67%;" /></p>
+<p><img src="https://agust.oss-cn-guangzhou.aliyuncs.com/images/202301161044687.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述" style="zoom:67%;" /></p>
 <ul>
 <li>当我们在Java中写完SQL语句后，Java代码会将SQL传给MySQL进行检查SQL语法和编译SQL，这两步的执行时间比执行SQL可能更久。</li>
 <li>对于Statement对象来说，要执行SQL语句需要每次将其导入Statement对象，如上图，MySQL会分别对两句SQL进行检查和编译；</li>
@@ -458,7 +515,7 @@ target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1ZR4y1Y745
 <p>使用之前的SQL注入测试，SQL注入问题解决</p>
 <figure>
 <img
-src="https://agust.oss-cn-guangzhou.aliyuncs.com/images/202301161044304.png"
+src="https://agust.oss-cn-guangzhou.aliyuncs.com/images/202301161044304.png" srcset="/img/loading.gif" lazyload
 alt="在这里插入图片描述" />
 <figcaption aria-hidden="true">在这里插入图片描述</figcaption>
 </figure>
@@ -468,7 +525,7 @@ alt="在这里插入图片描述" />
 <li>它允许应用程序重复使用一个现有的数据库连接，而不是再重新建立一个</li>
 <li>释放空闲时间超过最大空闲时间的数据库连接来避免因为没有释放数据库连接而引起的数据库连接遗漏</li>
 </ol>
-<p><img src="https://agust.oss-cn-guangzhou.aliyuncs.com/images/202301161044173.png" alt="在这里插入图片描述" style="zoom:67%;" /></p>
+<p><img src="https://agust.oss-cn-guangzhou.aliyuncs.com/images/202301161044173.png" srcset="/img/loading.gif" lazyload alt="在这里插入图片描述" style="zoom:67%;" /></p>
 <p>官方(SUN)提供的数据库连接池标准接口<code>DataSource</code>，由第三方组织实现此接口，其功能是获取连接。常见的数据库连接池:<strong>DBCP、C3PO、Druid</strong>.</p>
 <h3 id="使用druid">使用Druid</h3>
 <p>Druid(德鲁伊)连接池是阿里巴巴开源的数据库连接池项目，功能强大，性能优秀，是Java语言最好的数据库连接池之一。</p>
@@ -524,7 +581,7 @@ alt="在这里插入图片描述" />
     
       <span class="category-chain">
         
-  <a href="/categories/Java/" class="category-chain-item">Java</a>
+  <a href="/categories/JavaSE/" class="category-chain-item">JavaSE</a>
   
   
 
@@ -570,7 +627,7 @@ alt="在这里插入图片描述" />
       
         <div class="license-meta-item license-meta-date">
           <div>更新于</div>
-          <div>2023年1月17日</div>
+          <div>2023年1月20日</div>
         </div>
       
       
@@ -601,9 +658,9 @@ alt="在这里插入图片描述" />
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/01/17/hello-world/" title="Hello World">
+                      <a href="/2023/01/17/%E9%85%8D%E7%BD%AEMySQL%EF%BC%88%E5%85%8D%E5%AE%89%E8%A3%85%E7%89%88%E6%9C%AC%EF%BC%89/" title="MySQL-配置">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Hello World</span>
+                        <span class="hidden-mobile">MySQL-配置</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -611,7 +668,7 @@ alt="在这里插入图片描述" />
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/01/11/%E4%BD%BF%E7%94%A8hexo-github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" title="使用hexo+github搭建个人博客">
+                      <a href="/2023/01/11/hexo/" title="使用hexo+github搭建个人博客">
                         <span class="hidden-mobile">使用hexo+github搭建个人博客</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
@@ -760,6 +817,10 @@ alt="在这里插入图片描述" />
 
 
 
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
 
 
 
