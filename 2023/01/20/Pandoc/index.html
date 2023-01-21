@@ -18,24 +18,24 @@
   <meta name="author" content="Agust">
   <meta name="keywords" content="">
   
-    <meta name="description" content="配置使用环境  安装npm 安装git 配置Github pages  一键部署hexo博客 1.安装 hexo-deployer-git npm install hexo-deployer-git --save 2.修改配置 deploy:   type: git   repo: &lt;repository url&gt; # github pages 仓库地址   bra">
+    <meta name="description" content="什么是Pandoc？ Pandoc 是一个开源的文档转换工具。它可以将文档从一种格式转换为另一种格式，支持多种输入格式，如 Markdown，reStructuredText，LaTeX，HTML 和 Word，以及多种输出格式，如 PDF，EPUB，Docx 等。 配置Pandoc Github仓库 在仓库的release中下载适合自己系统的pandoc，解压缩后配置好环境变量">
 <meta property="og:type" content="article">
-<meta property="og:title" content="使用Hexo搭建个人博客">
-<meta property="og:url" content="http://agustletmen.github.io/2023/01/11/hexo/index.html">
+<meta property="og:title" content="Pandoc">
+<meta property="og:url" content="http://agustletmen.github.io/2023/01/20/Pandoc/index.html">
 <meta property="og:site_name" content="Agust&#39;s blog">
-<meta property="og:description" content="配置使用环境  安装npm 安装git 配置Github pages  一键部署hexo博客 1.安装 hexo-deployer-git npm install hexo-deployer-git --save 2.修改配置 deploy:   type: git   repo: &lt;repository url&gt; # github pages 仓库地址   bra">
+<meta property="og:description" content="什么是Pandoc？ Pandoc 是一个开源的文档转换工具。它可以将文档从一种格式转换为另一种格式，支持多种输入格式，如 Markdown，reStructuredText，LaTeX，HTML 和 Word，以及多种输出格式，如 PDF，EPUB，Docx 等。 配置Pandoc Github仓库 在仓库的release中下载适合自己系统的pandoc，解压缩后配置好环境变量">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://agustletmen.github.io/img/about.png">
-<meta property="article:published_time" content="2023-01-10T16:12:56.000Z">
-<meta property="article:modified_time" content="2023-01-20T07:41:21.628Z">
+<meta property="article:published_time" content="2023-01-20T07:41:59.000Z">
+<meta property="article:modified_time" content="2023-01-20T08:58:57.294Z">
 <meta property="article:author" content="Agust">
-<meta property="article:tag" content="博客搭建">
+<meta property="article:tag" content="Pandoc">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="http://agustletmen.github.io/img/about.png">
   
   
   
-  <title>使用Hexo搭建个人博客 - Agust&#39;s blog</title>
+  <title>Pandoc - Agust&#39;s blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -213,7 +213,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="使用Hexo搭建个人博客"></span>
+            <span id="subtitle" data-typed-text="Pandoc"></span>
           
         </div>
 
@@ -224,8 +224,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-01-11 00:12" pubdate>
-          2023年1月11日 凌晨
+        <time datetime="2023-01-20 15:41" pubdate>
+          2023年1月20日 下午
         </time>
       </span>
     
@@ -236,7 +236,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.1k 字
+          331 字
         
       </span>
     
@@ -247,7 +247,7 @@
         
         
         
-          10 分钟
+          3 分钟
         
       </span>
     
@@ -331,7 +331,7 @@
       
         <a href="/2023/01/20/Pandoc/" title="Pandoc"
            class="list-group-item list-group-item-action
-           ">
+           active">
           <span class="category-post">Pandoc</span>
         </a>
       
@@ -340,7 +340,7 @@
       
         <a href="/2023/01/11/hexo/" title="使用Hexo搭建个人博客"
            class="list-group-item list-group-item-action
-           active">
+           ">
           <span class="category-post">使用Hexo搭建个人博客</span>
         </a>
       
@@ -364,7 +364,7 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">使用Hexo搭建个人博客</h1>
+            <h1 style="display: none">Pandoc</h1>
             
               <p class="note note-info">
                 
@@ -377,42 +377,21 @@
             
               <div class="markdown-body">
                 
-                <h2 id="配置使用环境">配置使用环境</h2>
-<ol type="1">
-<li>安装npm</li>
-<li>安装git</li>
-<li>配置Github pages</li>
-</ol>
-<h2 id="一键部署hexo博客">一键部署hexo博客</h2>
-<p>1.安装 hexo-deployer-git</p>
-<div class="code-wrapper"><pre><code class="hljs sh">npm install hexo-deployer-git --save</code></pre></div>
-<p>2.修改配置</p>
-<div class="code-wrapper"><pre><code class="hljs sh">deploy:
-  <span class="hljs-built_in">type</span>: git
-  repo: &lt;repository url&gt; <span class="hljs-comment"># github pages 仓库地址</span>
-  branch: [branch] <span class="hljs-comment"># 分支名称 gh-pages (GitHub) 、coding-pages (Coding.net) 、master (others)</span>
-  message: [message] <span class="hljs-comment"># 自定义提交信息</span></code></pre></div>
-<p>3.执行
-<code>hexo clean &amp;&amp; hexo deploy</code>，生成站点文件并推送至远程库。</p>
-<p>4.登入 Github，在库设置（Repository Settings）中将Github
-page服务的分支设置为<code>_config.yml</code>配置中的分支名称。稍等片刻，您的站点就会显示在您的Github
-Pages中。</p>
-<h2 id="设置hexo支持latex公式">设置hexo支持Latex公式</h2>
-<p>网页上对<code>Latex</code>的支持需要借助能够解析<code>Latex</code>语法的插件引擎，将<code>Latex</code>语法转成<code>HTML</code>元素，常用的<code>Latex</code>公式引擎有<code>Katex</code>,<code>mathjax</code>引擎等，如CSDN使用的就是<code>Katex</code>，我们选择<code>mathjax</code>，这样渲染的公式更加好看。</p>
-<p>1.删除原有的渲染引擎，改为pandoc，并安装mathjax插件</p>
-<div class="code-wrapper"><pre><code class="hljs bash">npm uninstall hexo-renderer-marked
-npm install hexo-renderer-pandoc
-npm install hexo-filter-mathjax</code></pre></div>
-<p>2.安装pandoc</p>
-<p>3.修改站点<code>_config.yaml</code>文件，注意不是<code>themes</code>中的<code>_config.yaml</code></p>
-<div class="code-wrapper"><pre><code class="hljs yaml"><span class="hljs-attr">mathjax:</span>
-  <span class="hljs-attr">tags:</span> <span class="hljs-string">none</span> <span class="hljs-comment"># or &#x27;ams&#x27; or &#x27;all&#x27;</span>
-  <span class="hljs-attr">single_dollars:</span> <span class="hljs-literal">true</span> <span class="hljs-comment"># enable single dollar signs as in-line math delimiters</span>
-  <span class="hljs-attr">cjk_width:</span> <span class="hljs-number">0.9</span> <span class="hljs-comment"># relative CJK char width</span>
-  <span class="hljs-attr">normal_width:</span> <span class="hljs-number">0.6</span> <span class="hljs-comment"># relative normal (monospace) width</span>
-  <span class="hljs-attr">append_css:</span> <span class="hljs-literal">true</span> <span class="hljs-comment"># add CSS to pages rendered by MathJax</span>
-  <span class="hljs-attr">every_page:</span> <span class="hljs-literal">false</span> <span class="hljs-comment"># if true, every page will be rendered by MathJax regardless the `mathjax` setting in Front-matter</span></code></pre></div>
-<p>5.在需要使用latex的页面<code>.md</code>头部加入<code>mathjax: true</code></p>
+                <h2 id="什么是pandoc">什么是Pandoc？</h2>
+<p>Pandoc
+是一个开源的文档转换工具。它可以将文档从一种格式转换为另一种格式，支持多种输入格式，如
+Markdown，reStructuredText，LaTeX，HTML 和 Word，以及多种输出格式，如
+PDF，EPUB，Docx 等。</p>
+<h2 id="配置pandoc">配置Pandoc</h2>
+<p><a target="_blank" rel="noopener" href="https://github.com/jgm/pandoc">Github仓库</a></p>
+<p>在仓库的release中下载适合自己系统的pandoc，解压缩后配置好环境变量</p>
+<h2 id="如何使用pandoc">如何使用Pandoc？</h2>
+<p>Pandoc
+可以在命令行上使用，也可以作为库在程序中使用。这个工具可以帮助我们快速转换文件，而不需要复杂的设置。</p>
+<div class="code-wrapper"><pre><code class="hljs sh"><span class="hljs-comment"># pandoc [options] [input-file]</span>
+pandoc -o output.html input.txt <span class="hljs-comment"># -o 用于指定输出文件</span></code></pre></div>
+<p>更多使用请参考：<a
+target="_blank" rel="noopener" href="https://pandoc.org/MANUAL.html">使用手册（英文）</a></p>
 
                 
               </div>
@@ -446,7 +425,7 @@ npm install hexo-filter-mathjax</code></pre></div>
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">#博客搭建</a>
+        <a href="/tags/Pandoc/">#Pandoc</a>
       
     </div>
   
@@ -458,8 +437,8 @@ npm install hexo-filter-mathjax</code></pre></div>
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>使用Hexo搭建个人博客</div>
-      <div>http://agustletmen.github.io/2023/01/11/hexo/</div>
+      <div>Pandoc</div>
+      <div>http://agustletmen.github.io/2023/01/20/Pandoc/</div>
     </div>
     <div class="license-meta">
       
@@ -471,7 +450,7 @@ npm install hexo-filter-mathjax</code></pre></div>
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年1月11日</div>
+          <div>2023年1月20日</div>
         </div>
       
       
@@ -508,9 +487,9 @@ npm install hexo-filter-mathjax</code></pre></div>
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/01/16/JavaSE-JDBC/" title="JDBC">
+                      <a href="/2023/01/20/%E7%94%9F%E6%B4%BB-%E5%9F%BA%E9%87%91%E6%94%BB%E7%95%A5/" title="基金攻略">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">JDBC</span>
+                        <span class="hidden-mobile">基金攻略</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -518,8 +497,8 @@ npm install hexo-filter-mathjax</code></pre></div>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/01/03/%E5%B7%A5%E5%85%B7-Latex/" title="Latex">
-                        <span class="hidden-mobile">Latex</span>
+                      <a href="/2023/01/19/JavaSE-%E6%B3%A8%E8%A7%A3/" title="注解">
+                        <span class="hidden-mobile">注解</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
