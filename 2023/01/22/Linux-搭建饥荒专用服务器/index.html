@@ -18,24 +18,24 @@
   <meta name="author" content="Agust">
   <meta name="keywords" content="">
   
-    <meta name="description" content="注解 什么是注解？ 注解是JDK5引入的一种注释机制，Java语言中的类、构造器、方法、成员变量、参数等都可以被注解进行标注。 注解有什么用？ 作用：对Java中类、方法、成员变量做标记，然后进行特殊处理，至于到底做何种处理由业务需求来决定。例如在JUnit框架中，标记了注解@Test的方法就可以被当成测试方法执行，而没有标记的就不能当成测试方法执行。 如何使用注解？ 注解的使用时在注">
+    <meta name="description" content="科雷官网搭建教程 CSDN教程 设置一个专用的服务器对游戏体验来说有很大的提升，本文旨在用最简单的话语描述如何搭建一个饥荒联机版专用服务器。 首先声明，饥荒的专用服务器可以是 Windows 或 Linux，这里使用Linux的发行版本CentOS示例 为了创建可靠&#x2F;高性能的专用服务器体验，希望确保你的服务器满足以下条件：  网络带宽（upload）&#x3D; 8Kbytes &#x2F; playe">
 <meta property="og:type" content="article">
-<meta property="og:title" content="注解">
-<meta property="og:url" content="http://agustletmen.github.io/2023/01/19/JavaSE-%E6%B3%A8%E8%A7%A3/index.html">
+<meta property="og:title" content="Linux-搭建饥荒专用服务器">
+<meta property="og:url" content="http://agustletmen.github.io/2023/01/22/Linux-%E6%90%AD%E5%BB%BA%E9%A5%A5%E8%8D%92%E4%B8%93%E7%94%A8%E6%9C%8D%E5%8A%A1%E5%99%A8/index.html">
 <meta property="og:site_name" content="Agust&#39;s blog">
-<meta property="og:description" content="注解 什么是注解？ 注解是JDK5引入的一种注释机制，Java语言中的类、构造器、方法、成员变量、参数等都可以被注解进行标注。 注解有什么用？ 作用：对Java中类、方法、成员变量做标记，然后进行特殊处理，至于到底做何种处理由业务需求来决定。例如在JUnit框架中，标记了注解@Test的方法就可以被当成测试方法执行，而没有标记的就不能当成测试方法执行。 如何使用注解？ 注解的使用时在注">
+<meta property="og:description" content="科雷官网搭建教程 CSDN教程 设置一个专用的服务器对游戏体验来说有很大的提升，本文旨在用最简单的话语描述如何搭建一个饥荒联机版专用服务器。 首先声明，饥荒的专用服务器可以是 Windows 或 Linux，这里使用Linux的发行版本CentOS示例 为了创建可靠&#x2F;高性能的专用服务器体验，希望确保你的服务器满足以下条件：  网络带宽（upload）&#x3D; 8Kbytes &#x2F; playe">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://agustletmen.github.io/img/about.png">
-<meta property="article:published_time" content="2023-01-19T06:24:04.000Z">
-<meta property="article:modified_time" content="2023-01-20T09:04:01.956Z">
+<meta property="article:published_time" content="2023-01-22T04:03:35.000Z">
+<meta property="article:modified_time" content="2023-01-22T12:39:26.849Z">
 <meta property="article:author" content="Agust">
-<meta property="article:tag" content="注解">
+<meta property="article:tag" content="饥荒">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="http://agustletmen.github.io/img/about.png">
   
   
   
-  <title>注解 - Agust&#39;s blog</title>
+  <title>Linux-搭建饥荒专用服务器 - Agust&#39;s blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -253,7 +253,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="注解"></span>
+            <span id="subtitle" data-typed-text="Linux-搭建饥荒专用服务器"></span>
           
         </div>
 
@@ -264,8 +264,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-01-19 14:24" pubdate>
-          2023年1月19日 下午
+        <time datetime="2023-01-22 12:03" pubdate>
+          2023年1月22日 中午
         </time>
       </span>
     
@@ -276,7 +276,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          3.3k 字
+          3k 字
         
       </span>
     
@@ -287,7 +287,7 @@
         
         
         
-          28 分钟
+          25 分钟
         
       </span>
     
@@ -332,17 +332,17 @@
     
     <div class="category row nomargin-x">
       <a class="category-item 
-          list-group-item category-item-action col-10 col-md-11 col-xm-11" title="JavaSE"
-        id="heading-543b8bc8a493dcef4ec497e6abf4163b" role="tab" data-toggle="collapse" href="#collapse-543b8bc8a493dcef4ec497e6abf4163b"
+          list-group-item category-item-action col-10 col-md-11 col-xm-11" title="Linux"
+        id="heading-edc9f0a5a5d57797bf68e37364743831" role="tab" data-toggle="collapse" href="#collapse-edc9f0a5a5d57797bf68e37364743831"
         aria-expanded="true"
       >
-        JavaSE
-        <span class="list-group-count">(2)</span>
+        Linux
+        <span class="list-group-count">(1)</span>
         <i class="iconfont icon-arrowright"></i>
       </a>
       
-      <div class="category-collapse collapse show" id="collapse-543b8bc8a493dcef4ec497e6abf4163b"
-           role="tabpanel" aria-labelledby="heading-543b8bc8a493dcef4ec497e6abf4163b">
+      <div class="category-collapse collapse show" id="collapse-edc9f0a5a5d57797bf68e37364743831"
+           role="tabpanel" aria-labelledby="heading-edc9f0a5a5d57797bf68e37364743831">
         
         
           
@@ -351,19 +351,10 @@
     
       
       
-        <a href="/2023/01/16/JavaSE-JDBC/" title="JDBC"
-           class="list-group-item list-group-item-action
-           ">
-          <span class="category-post">JDBC</span>
-        </a>
-      
-    
-      
-      
-        <a href="/2023/01/19/JavaSE-%E6%B3%A8%E8%A7%A3/" title="注解"
+        <a href="/2023/01/22/Linux-%E6%90%AD%E5%BB%BA%E9%A5%A5%E8%8D%92%E4%B8%93%E7%94%A8%E6%9C%8D%E5%8A%A1%E5%99%A8/" title="Linux-搭建饥荒专用服务器"
            class="list-group-item list-group-item-action
            active">
-          <span class="category-post">注解</span>
+          <span class="category-post">Linux-搭建饥荒专用服务器</span>
         </a>
       
     
@@ -386,12 +377,12 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">注解</h1>
+            <h1 style="display: none">Linux-搭建饥荒专用服务器</h1>
             
               <p class="note note-info">
                 
                   
-                    本文最后更新于：2023年1月20日 下午
+                    本文最后更新于：2023年1月22日 晚上
                   
                 
               </p>
@@ -399,196 +390,106 @@
             
               <div class="markdown-body">
                 
-                <h1 id="注解">注解</h1>
-<h3 id="什么是注解">什么是注解？</h3>
-<p><strong>注解</strong>是JDK5引入的一种注释机制，Java语言中的类、构造器、方法、成员变量、参数等都可以被注解进行标注。</p>
-<h3 id="注解有什么用">注解有什么用？</h3>
-<p><strong>作用</strong>：对Java中类、方法、成员变量做标记，然后进行特殊处理，至于到底做何种处理由业务需求来决定。例如在JUnit框架中，标记了注解<code>@Test</code>的方法就可以被当成测试方法执行，而没有标记的就不能当成测试方法执行。</p>
-<h3 id="如何使用注解">如何使用注解？</h3>
-<p>注解的使用时在注解名前加上@符号，并在其后的括号中对各元素复制，如</p>
-<div class="code-wrapper"><pre><code class="hljs java"><span class="hljs-meta">@myAnnoation(value = &quot;a&quot;)</span>
-<span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">method</span><span class="hljs-params">()</span>&#123;
-    <span class="hljs-comment">//...</span>
-&#125;</code></pre></div>
-<h2 id="预定义的注解">预定义的注解</h2>
-<p>Java提供了一些预定义的注解类型，如<code>@Deprecated</code>、<code>@Override</code>
-和 <code>@SuppressWarnings</code> 是在 <code>java.lang</code>
-中预定义的。</p>
-<p><code>@Deprecated</code>
-注解表示标记的元素已被弃用，不应再使用。只要程序使用带
-<code>@Deprecated</code> 注解的方法，类或字段，编译器就会生成警告。</p>
-<p><code>@Override</code>
-注解通知编译器该元素意图覆盖在超类中声明的元素。</p>
-<p><code>@SuppressWarnings</code>
-注解告诉编译器抑制它将会生成的特定警告。在以下示例中，使用了不推荐使用的方法，编译器通常会生成警告。但是，在这种情况下，注解会导致警告被抑制。</p>
-<div class="code-wrapper"><pre><code class="hljs java"><span class="hljs-comment">// 使用已弃用的方法，并告诉编译器产生警告</span>
-<span class="hljs-meta">@SuppressWarnings(&quot;deprecation&quot;)</span>
-<span class="hljs-keyword">void</span> <span class="hljs-title function_">DeprecatedMethod</span><span class="hljs-params">()</span> &#123;
-   objectOne.deprecatedMethod();
-&#125;</code></pre></div>
-<h2 id="元注解">元注解</h2>
-<p>元注解也是注解，作用是负责注解其他注解。Java5.0定义了4个标准的meta-annotation类型，它们被用来提供对其它annotation类型作说明。Java5.0定义的元注解有以下几种：</p>
-<ol type="1">
-<li><code>@Target</code>:约束自定义注解只能在哪些地方使用</li>
-<li><code>@Retention</code>:申明注解的生命周期</li>
-<li><code>@Documented</code>:表明可以将注解通过javadoc或类似工具进行文档化</li>
-<li><code>@Inherited</code>:表明注解被自动继承</li>
-</ol>
-<p><code>@Target</code>中可使用的值定义在<code>ElementType</code>枚举类中，常用值如下:</p>
-<table>
-<thead>
-<tr class="header">
-<th>可选值</th>
-<th>使用范围</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>TYPE</td>
-<td>类，接口</td>
-</tr>
-<tr class="even">
-<td>FIELD</td>
-<td>成员变量</td>
-</tr>
-<tr class="odd">
-<td>METHOD</td>
-<td>成员方法</td>
-</tr>
-<tr class="even">
-<td>PARAMETER</td>
-<td>方法参数</td>
-</tr>
-<tr class="odd">
-<td>CONSTRUCTOR</td>
-<td>构造器</td>
-</tr>
-<tr class="even">
-<td>LOCAL_VARIABLE</td>
-<td>局部变量</td>
-</tr>
-<tr class="odd">
-<td>PACKAGE</td>
-<td>包</td>
-</tr>
-</tbody>
-</table>
-<p><strong><span class="citation"
-data-cites="Retention">@Retention</span></strong>中可使用的值定义在<code>RetentionPolicy</code>枚举类中，常用值如下:</p>
-<table>
-<tbody>
-<tr class="odd">
-<td>SOURCE</td>
-<td>注解只作用在源码阶段，生成的字节码文件中不存在</td>
-</tr>
-<tr class="even">
-<td>CLASS</td>
-<td>注解作用在源码阶段，字节码文件阶段,运行阶段不存在，默认值</td>
-</tr>
-<tr class="odd">
-<td>RUNTIME</td>
-<td>注解作用在源码阶段，字节码文件阶段，运行阶段(开发常用)</td>
-</tr>
-</tbody>
-</table>
-<p>使用示例：</p>
-<div class="code-wrapper"><pre><code class="hljs java"><span class="hljs-meta">@Target(&#123;ElementType.FIELD, ElementType.METHOD&#125;)</span><span class="hljs-comment">//规定使用范围--变量和方法</span>
-<span class="hljs-meta">@Retention(RetentionPolicy.RUNTIME)</span><span class="hljs-comment">//注解作用在源码阶段，字节码文件阶段，运行阶段</span>
-<span class="hljs-meta">@interface</span> MyTest &#123;
-    <span class="hljs-comment">//自定义注解</span>
-&#125;</code></pre></div>
-<h2 id="自定义注解">自定义注解</h2>
-<div class="code-wrapper"><pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-meta">@interface</span> 注解名称 &#123;
-    <span class="hljs-keyword">public</span> 属性类型 属性名() <span class="hljs-keyword">default</span> 默认值;<span class="hljs-comment">//默认值可以省略</span>
-&#125;<span class="hljs-comment">//属性类型：Java支持的数据类型基本上都支持</span></code></pre></div>
+                <p><a
+target="_blank" rel="noopener" href="https://dontstarve.fandom.com/wiki/Guides/Don’t_Starve_Together_Dedicated_Servers">科雷官网搭建教程</a></p>
+<p><a
+target="_blank" rel="noopener" href="https://blog.csdn.net/qq_39551064/article/details/121580637">CSDN教程</a></p>
+<p>设置一个专用的服务器对游戏体验来说有很大的提升，本文旨在用最简单的话语描述如何搭建一个饥荒联机版专用服务器。</p>
+<p>首先声明，饥荒的专用服务器可以是 Windows 或
+Linux，这里使用Linux的发行版本CentOS示例</p>
+<p>为了创建可靠/高性能的专用服务器体验，希望确保你的服务器满足以下条件：</p>
+<ul>
+<li><p>网络带宽（upload）= 8Kbytes / player /s</p></li>
+<li><p>RAM= 65Mbytes / player</p></li>
+<li><p>CPU= N/A</p></li>
+<li><p>VCRedist_2008（x86）</p></li>
+</ul>
+<h2 id="搭建">搭建</h2>
+<h4 id="安装steamcmd和饥荒服务器软件">安装steamcmd和饥荒服务器软件</h4>
+<div class="code-wrapper"><pre><code class="hljs sh"><span class="hljs-comment"># 创建用户和目录</span>
+useradd steam
+su - steam
+<span class="hljs-built_in">mkdir</span> -p ./module/software  ./module/steamcmd_linux
+
+
+<span class="hljs-comment"># 由于linux上的steamcmd需要在32位的环境下运行，因此我们要事先安装32位的运行库</span>
+sudo yum -y install glibc.i686 libstdc++.i686  libcurl.i686 
+sudo yum -y screen
+
+
+<span class="hljs-comment"># 下载并安装linux系统中的命令行版本steam——steamcmd</span>
+
+<span class="hljs-built_in">cd</span> module/software/
+wget https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz <span class="hljs-comment"># 下载软件包到 module/software</span>
+
+<span class="hljs-comment"># 解压到 module/steamcmd_linux</span>
+tar -zxvf steamcmd_linux.tar.gz -C ../steamcmd_linux/
+
+
+<span class="hljs-comment"># 启动steamcmd</span>
+<span class="hljs-built_in">cd</span> /home/steam/module/steamcmd_linux/
+./steamcmd.sh
+
+<span class="hljs-comment"># 在steamcmd中</span>
+<span class="hljs-comment"># 设置目录，安装饥荒服务器</span>
+force_install_dir /home/steam/module/DoNotStarveTogether <span class="hljs-comment"># 强制steamcmd将游戏下载到&quot;/home/steam/dst/&quot;这个目录中</span>
+
+<span class="hljs-comment"># 登录</span>
+login anonymous <span class="hljs-comment"># “匿名登录steam”，相当于不登陆地打开了steam商店</span>
+app_update 343050 validate <span class="hljs-comment"># 安装编号为343050的游戏，这个编号是服务器版Don’t Starve Together的编号，在网站https://steamdb.keylol.com/可以搜索到。</span>
+
+<span class="hljs-comment"># 退出</span>
+quit
+
+<span class="hljs-comment"># 设置软链接，解决问题</span>
+<span class="hljs-built_in">ln</span> -s /usr/lib/libcurl.so.4 /home/steam/module/DoNotStarveTogether/bin/lib32/libcurl-gnutls.so.4
+
+<span class="hljs-comment"># 创建世界目录</span>
+<span class="hljs-built_in">cd</span> /home/steam/module/DoNotStarveTogether/
+<span class="hljs-built_in">mkdir</span> -p allworlds/world1
+
+<span class="hljs-comment"># 创建启动脚本</span>
+<span class="hljs-built_in">cd</span> /home/steam/module/DoNotStarveTogether/bin
+<span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;./dontstarve_dedicated_server_nullrenderer -console -persistent_storage_root /home/steam/module/DoNotStarveTogether -conf_dir allworlds -cluster world1 -shard Master&quot;</span> &gt; master_start.sh
+<span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;./dontstarve_dedicated_server_nullrenderer -console -persistent_storage_root /home/steam/module/DoNotStarveTogether -conf_dir allworlds -cluster world1 -shard Caves&quot;</span> &gt; cave_start.sh
+<span class="hljs-built_in">chmod</span> +x master_start.sh cave_start.sh</code></pre></div>
+<h4 id="创建饥荒世界">创建饥荒世界</h4>
+<p>创建服务器并复制用户ID和服务器ID，用户ID用于添加饥荒世界中的管理员</p>
+<div class="code-wrapper"><pre><code class="hljs sh"><span class="hljs-comment"># 用户ID</span>
+KU_cPYKIEg_
+
+<span class="hljs-comment"># 服务器ID</span>
+pds-g^KU_cPYKIEg_^LqCoIOYwZvqLWTt3h7MOWe+A6At2R4azjA1wN/eAZIE=</code></pre></div>
+<p>在饥荒世界文件夹中创建<code>adminlist.txt</code>文件和<code>cluster_token.txt</code>文件，将用户ID复制到<code>adminlist.txt</code>中，将服务器ID复制到<code>cluster_token.txt</code>中，最后将电脑上的饥荒世界文件即这两个文本文件上传到服务器上<code>/home/steam/module/DoNotStarveTogether/allworlds/world1</code>。</p>
+<h4 id="添加mod">添加mod</h4>
+<p>找到Master或者Caves目录下的<code>modoverrides.lua</code>文件，类似于<code>workshop-xxxxxxxx</code>，<code>workshop-</code>后面的纯数字串就是你创建世界时开启的mod，将这些数字串全部复制出来写成<code>ServerModSetup("xxxxxxx")</code>的形式，存入服务器上的<code>/home/steam/module/DoNotStarveTogether/mods/dedicated_server_mods_setup.lua</code>文件中</p>
+<div class="code-wrapper"><pre><code class="hljs lua">ServerModSetup(<span class="hljs-string">&quot;1207269058&quot;</span>)
+ServerModSetup(<span class="hljs-string">&quot;1216718131&quot;</span>)
+ServerModSetup(<span class="hljs-string">&quot;1860955902&quot;</span>)
+ServerModSetup(<span class="hljs-string">&quot;2189004162&quot;</span>)
+ServerModSetup(<span class="hljs-string">&quot;375850593&quot;</span>)
+ServerModSetup(<span class="hljs-string">&quot;458587300&quot;</span>)</code></pre></div>
+<p>找到mod的数据文件上传到服务器</p>
 <blockquote>
-<p>特殊属性：value属性，如果只有一个value属性的情况下，使用value属性的时候可以省略value名称不写!!</p>
-<p>但是如果有多个属性,
-且多个属性没有默认值，那么value名称是不能省略的。</p>
+<p>mod文件在Steam't Starve Together</p>
+<p>大型mod,存放在Steam，
+需要复制出来更改文件夹都重命名加上workshop-前缀</p>
 </blockquote>
-<p>示例：</p>
-<div class="code-wrapper"><pre><code class="hljs java"><span class="hljs-meta">@MyBook(name = &quot;《精通JavaSE》&quot;, authors = &#123;&quot;小米&quot;, &quot;大头&quot;&#125;, price = 9.9)</span>
-<span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Test</span> &#123;<span class="hljs-comment">//测试类</span>
-
-    <span class="hljs-meta">@MyBook(authors = &quot;Ahaha&quot;)</span>
-    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">Main</span><span class="hljs-params">()</span> &#123;
-
-    &#125;
-&#125;
-
-<span class="hljs-meta">@interface</span> MyBook &#123;
-    <span class="hljs-comment">//public 属性类型 属性名() default 默认值</span>
-    String <span class="hljs-title function_">name</span><span class="hljs-params">()</span> <span class="hljs-keyword">default</span> <span class="hljs-string">&quot;nobody&quot;</span>;
-
-    String[] authors();
-
-    <span class="hljs-type">double</span> <span class="hljs-title function_">price</span><span class="hljs-params">()</span> <span class="hljs-keyword">default</span> <span class="hljs-number">999.999</span>;
-&#125;</code></pre></div>
-<h2 id="解析注解">解析注解</h2>
-<p>注解的解析就是判断是否存在注解，存在注解就解析出内容。</p>
-<p><strong>与注解解析的相关的接口</strong>：</p>
-<ol type="1">
-<li><code>Annotation</code>:注解的顶级接口，注解都是Annotation类型的对象</li>
-<li><code>AnnotatedElement</code>:该接口定义了与注解解析相关的解析方法，如下：</li>
-</ol>
-<div class="code-wrapper"><pre><code class="hljs java"><span class="hljs-comment">//获得当前对象上使用的所有注解，返回注解数组。</span>
-Annotation[] getDeclaredAnnotations();
-
-<span class="hljs-comment">//根据注解类型获得对应注解对象</span>
-T <span class="hljs-title function_">getDeclaredAnnotation</span><span class="hljs-params">(Class&lt;T&gt; annotationClass)</span>;
-
-<span class="hljs-comment">//判断当前对象是否使用了指定的注解，如果使用了则返回true,否则false</span>
-<span class="hljs-type">boolean</span> <span class="hljs-title function_">isAnnotationPresent</span><span class="hljs-params">(Class &lt; Annotation&gt; annotationClass)</span></code></pre></div>
+<p>将以上mod的文件夹名改为<code>workshop-xxxxx</code>并全部上传到服务器上<code>/home/steam/module/DoNotStarveTogether/mods</code>目录下</p>
+<h2 id="更新">更新</h2>
+<p>创建一个shell文件</p>
+<div class="code-wrapper"><pre><code class="hljs sh">vim /home/steam/update_dst.sh</code></pre></div>
 <blockquote>
-<p>所有的类成分Class、Method、Field、Constructor，都实现了<code>AnnotatedElement</code>接口，都拥有解析注解的能力。</p>
+<p>别忘了根据实际情况修改游戏的路径 和 steamcmd 的路径</p>
 </blockquote>
-<p>解析一个注解，先获取注解对象（使用反射提供的API），再获取对象中的属性（使用注解提供的API）</p>
-<ol type="1">
-<li>获取需要解析的对象</li>
-<li>判断当前对象是否使用了指定的注解
-<code>isAnnotationPresent</code></li>
-<li>获取注解
-<code>getDeclaredAnnotation</code>、<code>getDeclaredAnnotations</code></li>
-</ol>
-<h1 id="应用">应用</h1>
-<h2 id="模拟junit框架">模拟Junit框架</h2>
-<p>1、先自定义注解，表示junit中的 <span class="citation"
-data-cites="Test">@Test</span></p>
-<div class="code-wrapper"><pre><code class="hljs java"><span class="hljs-meta">@Target(ElementType.METHOD)</span>
-<span class="hljs-meta">@Retention(RetentionPolicy.RUNTIME)</span>
-<span class="hljs-meta">@interface</span> MyTest &#123;
-<span class="hljs-comment">//content</span>
-&#125;</code></pre></div>
-<p>2、书写测试方法，使用自定义的注解标注</p>
-<div class="code-wrapper"><pre><code class="hljs java"><span class="hljs-meta">@MyTest</span>
-<span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">test1</span><span class="hljs-params">()</span> &#123;
-    System.out.println(<span class="hljs-string">&quot;==test1==&quot;</span>);
-&#125;</code></pre></div>
-<p>3、在主方法的使用反射，获取该类中被注解标注的方法，并使用<code>invoke</code>执行</p>
-<div class="code-wrapper"><pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> <span class="hljs-keyword">throws</span> Exception &#123;
-    <span class="hljs-type">Annotation4</span> <span class="hljs-variable">t</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Annotation4</span>();
-    Class&lt;?&gt; c = Annotation4.class;
-    Method[] methods = c.getDeclaredMethods();
-    <span class="hljs-keyword">for</span> (Method method : methods) &#123;
-        <span class="hljs-keyword">if</span> (method.isAnnotationPresent(MyTest.class)) &#123;
-            method.invoke(t);
-        &#125;
-    &#125;
-&#125;</code></pre></div>
-<blockquote>
-<p>这里的测试方法 和 主方法 是在同一个类中的</p>
-</blockquote>
-<h1 id="lombok">Lombok</h1>
-<p><span class="citation" data-cites="Data">@Data</span></p>
-<p>使用这个注解，就不用再去手写Getter,Setter,equals,canEqual,hasCode,toString等方法了，注解后在编译时会自动加进去。</p>
-<p><span class="citation"
-data-cites="AllArgsConstructor">@AllArgsConstructor</span></p>
-<p>使用后添加一个构造函数，该构造函数含有所有已声明字段属性参数</p>
-<p><span class="citation"
-data-cites="NoArgsConstructor">@NoArgsConstructor</span></p>
-<p>使用后创建一个无参构造函数</p>
-<p><span class="citation" data-cites="Builder">@Builder</span></p>
-<p>关于Builder较为复杂一些，Builder的作用之一是为了解决在某个类有很多构造函数的情况，也省去写很多构造函数的麻烦，在设计模式中的思想是：用一个内部类去实例化一个对象，避免一个类出现过多构造函数。</p>
+<div class="code-wrapper"><pre><code class="hljs sh"><span class="hljs-meta">#!/bin/sh</span>
+
+/home/steam/steamcmd/steamcmd.sh +@ShutdownOnFailedCommand 1 +@NoPromptForPassword 1 +login anonymous +force_install_dir /home/steam/steamapps/DST +app_update 343050 validate +quit
+
+/home/steam/steamapps/DST/bin/dontstarve_dedicated_server_nullrenderer -only_update_server_mods</code></pre></div>
+<p>更改脚本的权限，并执行</p>
+<div class="code-wrapper"><pre><code class="hljs sh"><span class="hljs-built_in">chmod</span> +x update_dst.sh
+/home/steam/update_dst.sh</code></pre></div>
 
                 
               </div>
@@ -607,7 +508,7 @@ data-cites="NoArgsConstructor">@NoArgsConstructor</span></p>
     
       <span class="category-chain">
         
-  <a href="/categories/JavaSE/" class="category-chain-item">JavaSE</a>
+  <a href="/categories/Linux/" class="category-chain-item">Linux</a>
   
   
 
@@ -622,7 +523,7 @@ data-cites="NoArgsConstructor">@NoArgsConstructor</span></p>
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/%E6%B3%A8%E8%A7%A3/">#注解</a>
+        <a href="/tags/%E9%A5%A5%E8%8D%92/">#饥荒</a>
       
     </div>
   
@@ -634,8 +535,8 @@ data-cites="NoArgsConstructor">@NoArgsConstructor</span></p>
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>注解</div>
-      <div>http://agustletmen.github.io/2023/01/19/JavaSE-注解/</div>
+      <div>Linux-搭建饥荒专用服务器</div>
+      <div>http://agustletmen.github.io/2023/01/22/Linux-搭建饥荒专用服务器/</div>
     </div>
     <div class="license-meta">
       
@@ -647,13 +548,13 @@ data-cites="NoArgsConstructor">@NoArgsConstructor</span></p>
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年1月19日</div>
+          <div>2023年1月22日</div>
         </div>
       
       
         <div class="license-meta-item license-meta-date">
           <div>更新于</div>
-          <div>2023年1月20日</div>
+          <div>2023年1月22日</div>
         </div>
       
       
@@ -684,9 +585,9 @@ data-cites="NoArgsConstructor">@NoArgsConstructor</span></p>
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/01/20/Pandoc/" title="Pandoc">
+                      <a href="/2023/01/23/OS-%E5%89%8D%E5%90%8E%E5%8F%B0/" title="OS-前后台切换">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Pandoc</span>
+                        <span class="hidden-mobile">OS-前后台切换</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -694,8 +595,8 @@ data-cites="NoArgsConstructor">@NoArgsConstructor</span></p>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/01/18/Git/" title="Git">
-                        <span class="hidden-mobile">Git</span>
+                      <a href="/2023/01/20/%E7%94%9F%E6%B4%BB-%E5%9F%BA%E9%87%91%E6%94%BB%E7%95%A5/" title="基金攻略">
+                        <span class="hidden-mobile">基金攻略</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
