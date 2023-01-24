@@ -27,7 +27,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://agustletmen.github.io/img/about.png">
 <meta property="article:published_time" content="2023-01-22T04:03:35.000Z">
-<meta property="article:modified_time" content="2023-01-23T14:38:45.997Z">
+<meta property="article:modified_time" content="2023-01-24T05:58:37.740Z">
 <meta property="article:author" content="Agust">
 <meta property="article:tag" content="饥荒">
 <meta name="twitter:card" content="summary_large_image">
@@ -276,7 +276,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          3.6k 字
+          3.8k 字
         
       </span>
     
@@ -287,7 +287,7 @@
         
         
         
-          30 分钟
+          32 分钟
         
       </span>
     
@@ -382,7 +382,7 @@
               <p class="note note-info">
                 
                   
-                    本文最后更新于：2023年1月23日 晚上
+                    本文最后更新于：2023年1月24日 下午
                   
                 
               </p>
@@ -528,6 +528,12 @@ Steam&gt; quit</code></pre></div>
 <p>使用<code>screen -r sessionid</code>进入到screen，比如这里进入2883</p>
 <div class="code-wrapper"><pre><code class="hljs sh">screen -r 2883</code></pre></div>
 <p>执行完命令后，就来到了执行洞穴世界命令的screen，我们按下<code>Ctrl + c</code>就可以关闭服务器的运行。</p>
+<h1 id="issue">issue</h1>
+<p>某些mod文件夹被删除的原因</p>
+<p>服务端程序判定这些mod文件夹不应该在这个位置。所以在开启服务端的时候，它会删除那些认为不规范的mod文件夹，并且根据
+dedicated_server_mods_setup.lua
+里面填写的id，自动下载没下的mod到另一个位置（那里才是正确的位置）。</p>
+<p>但是服务端的启动程序好像有点毛病，下载不到一两分钟就自动断了，然后跳过下载直接创建世界并开服。这就导致一些比较大的mod还没下载完，就创建了世界，造成启动失败或者地形mod未加载到世界中。</p>
 
                 
               </div>
@@ -592,7 +598,7 @@ Steam&gt; quit</code></pre></div>
       
         <div class="license-meta-item license-meta-date">
           <div>更新于</div>
-          <div>2023年1月23日</div>
+          <div>2023年1月24日</div>
         </div>
       
       
